@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beverages</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+  
+<body style="margin: 0; font-family: 'Poppins', sans-serif;">
+
+    <header class="main-header">
+        <div class="logo">
+          <img src="logo.png" alt="Restaurant Logo">
+        </div>
+      
+        <nav>
+          <ul class="nav-links">
+            <li><a href="home.html" class="nav-item">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="nav-item">Services</a>
+              <ul class="dropdown-menu">
+                <li><a href="our_menu.html">Menu</a></li>
+                <li><a href="event_hosting.html">Event Hosting</a></li>
+                <li><a href="catering_service.html">Catering Services</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html" class="nav-item">About</a></li>
+            <li><a href="blog.html" class="nav-item">Blog</a></li>
+            <li><a href="contact.html" class="nav-item">Contact</a></li>
+          </ul>
+        </nav>
+      
+        <div class="search-box">
+            <form action="searchbutton.php" method="GET" id="searchForm">
+                <input type="text" name="query" id="searchInput" placeholder="Search..." required>
+                <button type="submit" class="search-btn">Search</button>
+            </form>
+        </div>
+        
+        <!-- Results will be displayed here -->
+        <div id="searchResults"></div>  
+          </div>
+          
+      </header>
+
+  <!-- Hero Section beverages section -->
+<div class="hero-section">
+    <h1 class="hero-title">Beverages</h1>
+  </div>
+  
+  
+
+    <!-- Menu Section -->
+<div class="menu-section">
+    <h2 class="menu-title">Explore Our Dishes</h2>
+    <div class="menu-items">
+        <!-- Food Item 1 -->
+        <div class="food-item">
+            <img src="images/beverages/black_coffee.jpg" alt="Dish 1" class="food-image">
+            <div class="food-info">
+                <h3 class="food-name">Black Coffee</h3>
+                <p class="food-price">$8</p>
+                <button class="order-btn" onclick="alert('Order placed for Black Coffee!')">Order Now</button>
+            </div>
+        </div>
+
+        <!-- Food Item 2 -->
+        <div class="food-item">
+            <img src="images/beverages/bubble-tea.jpg" alt="Dish 2" class="food-image">
+            <div class="food-info">
+                <h3 class="food-name">Bubble Tea</h3>
+                <p class="food-price">$20</p>
+                <button class="order-btn" onclick="alert('Order placed for Bubble Tea!')">Order Now</button>
+            </div>
+        </div>
+
+        <!-- Food Item 3 -->
+        <div class="food-item">
+            <img src="images/beverages/coffee.png" alt="Dish 3" class="food-image">
+            <div class="food-info">
+                <h3 class="food-name">Coffee</h3>
+                <p class="food-price">$10</p>
+                <button class="order-btn" onclick="alert('Order placed for Coffee!')">Order Now</button>
+            </div>
+        </div>
+
+        <!-- Food Item 4 -->
+        <div class="food-item">
+            <img src="images/beverages/green_tea.jpg" alt="Dish 3" class="food-image">
+            <div class="food-info">
+                <h3 class="food-name">Green Tea</h3>
+                <p class="food-price">$7</p>
+                <button class="order-btn" onclick="alert('Order placed for Green Tea!')">Order Now</button>
+            </div>
+        </div>
+
+        <!-- Food Item 5 -->
+        <div class="food-item">
+            <img src="images/beverages/mango_juice.jpg" alt="Dish 3" class="food-image">
+            <div class="food-info">
+                <h3 class="food-name">Mango Juice</h3>
+                <p class="food-price">$11</p>
+                <button class="order-btn" onclick="alert('Order placed for Mango Juice!')">Order Now</button>
+            </div>
+        </div>
+
+        <!-- Food Item 6 -->
+        <div class="food-item">
+            <img src="images/beverages/milkshake.jpg" alt="Dish 3" class="food-image">
+            <div class="food-info">
+                <h3 class="food-name">Milkshake</h3>
+                <p class="food-price">$18</p>
+                <button class="order-btn" onclick="alert('Order placed for Milkshake!')">Order Now</button>
+            </div>
+        </div>
+
+        <!-- Food Item 7 -->
+        <div class="food-item">
+            <img src="images/beverages/orange_juice.jpg" alt="Dish 3" class="food-image">
+            <div class="food-info">
+                <h3 class="food-name">Orange Juice</h3>
+                <p class="food-price">$10</p>
+                <button class="order-btn" onclick="alert('Order placed for Orange Juice!')">Order Now</button>
+            </div>
+        </div>
+
+        <!-- Food Item 8 -->
+        <div class="food-item">
+            <img src="images/beverages/tea.jpg" alt="Dish 3" class="food-image">
+            <div class="food-info">
+                <h3 class="food-name">Tea</h3>
+                <p class="food-price">$10</p>
+                <button class="order-btn" onclick="alert('Order placed for Tea!')">Order Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <p class="footer-text">© 2024 Our Restaurant. All rights reserved.</p>
+</footer>
+
+
+</body>
+</html>

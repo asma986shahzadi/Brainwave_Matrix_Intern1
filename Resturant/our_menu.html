@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="menu-body">
+    <header class="main-header">
+        <div class="logo">
+          <img src="logo.png" alt="Restaurant Logo">
+        </div>
+      
+        <nav>
+          <ul class="nav-links">
+            <li><a href="home.html" class="nav-item">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="nav-item">Services</a>
+              <ul class="dropdown-menu">
+                <li><a href="our_menu.html">Menu</a></li>
+                <li><a href="event_hosting.html">Event Hosting</a></li>
+                <li><a href="catering_service.html">Catering Services</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html" class="nav-item">About</a></li>
+            <li><a href="blog.html" class="nav-item">Blog</a></li>
+            <li><a href="contact.html" class="nav-item">Contact</a></li>
+          </ul>
+        </nav>
+      
+        <div class="search-box">
+            <form action="searchbutton.php" method="GET" id="searchForm">
+                <input type="text" name="query" id="searchInput" placeholder="Search..." required>
+                <button type="submit" class="search-btn">Search</button>
+            </form>
+        </div>
+        
+        <!-- Results will be displayed here -->
+        <div id="searchResults"></div>
+          
+          </div>
+          
+      </header>
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <h1 class="hero-title">Menu</h1>
+    </div>
+
+      <!-- Menu Section -->
+<div class="menu-section">
+    <h2 class="menu-heading">Explore Our Culinary Delights</h2>
+    <p class="menu-subtext">
+        Indulge in our carefully crafted dishes, from seasonal delights to signature specials.
+    </p>
+
+    <div class="menu-options">
+        <!-- Main Menu -->
+        <div class="menu-card">
+            <h3>Main Menu</h3>
+            <p>View all our delicious dishes crafted with love and fresh ingredients.</p>
+            <a href="main_course.html"><button class="menu-btn">Explore</button></a>
+        </div>
+
+        <!-- Chef's Specials -->
+        <div class="menu-card">
+            <h3>Chef's Specials</h3>
+            <p>Experience the signature dishes that make our cuisine unique.</p>
+            <a href="chef_special.html"><button class="menu-btn">Discover</button></a>
+        </div>
+
+        <!-- Seasonal Delights -->
+        <div class="menu-card">
+            <h3>Seasonal Delights</h3>
+            <p>Savor the flavors of the season with our limited-time offerings.</p>
+            <a href="seasonal_delight.html"><button class="menu-btn">Enjoy</button></a>
+        </div>
+
+        <!-- Beverages -->
+        <div class="menu-card">
+            <h3>Beverages</h3>
+            <p>Refresh yourself with our selection of drinks, juices, and cocktails.</p>
+            <a href="beverages.html"><button class="menu-btn">View Drinks</button></a>
+        </div>
+
+        <!-- Desserts -->
+        <div class="menu-card">
+            <h3>Desserts</h3>
+            <p>Delight in our mouth-watering selection of cakes, pastries, and more.</p>
+            <a href="dessert.html"><button class="menu-btn">View Desserts</button></a>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <p>© 2024 Our Restaurant. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>

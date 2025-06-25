@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="margin: 0; font-family: 'Poppins', sans-serif;">
+
+    <header class="main-header">
+        <div class="logo">
+          <img src="logo.png" alt="Restaurant Logo">
+        </div>
+      
+        <nav>
+          <ul class="nav-links">
+            <li><a href="home.html" class="nav-item">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="nav-item">Services</a>
+              <ul class="dropdown-menu">
+                <li><a href="our_menu.html">Menu</a></li>
+                <li><a href="event_hosting.html">Event Hosting</a></li>
+                <li><a href="catering_service.html">Catering Services</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html" class="nav-item">About</a></li>
+            <li><a href="blog.html" class="nav-item">Blog</a></li>
+            <li><a href="contact.html" class="nav-item">Contact</a></li>
+          </ul>
+        </nav>
+      
+        <div class="search-box">
+            <form action="searchbutton.php" method="GET" id="searchForm">
+                <input type="text" name="query" id="searchInput" placeholder="Search..." required>
+                <button type="submit" class="search-btn">Search</button>
+            </form>
+        </div>
+        
+        <!-- Results will be displayed here -->
+        <div id="searchResults"></div>  
+          </div>
+          
+      </header>
+
+    <!-- Hero Section -->
+<div class="catering-hero">
+    <h1>Catering Services</h1>
+</div>
+
+<!-- Introduction Section -->
+<div class="catering-intro">
+    <h2>Exquisite Catering for Every Occasion</h2>
+    <p>
+        Elevate your events with our premium catering services. Whether it's a small gathering or a grand celebration, we provide delicious food, impeccable service, and a delightful experience for you and your guests.
+    </p>
+</div>
+
+    <!-- Services Section -->
+<div class="catering-services">
+
+    <!-- Service Item -->
+    <div class="catering-card">
+        <img src="images/wedding-catering.jpg" alt="Wedding Catering">
+        <div class="card-content">
+            <h3>Wedding Catering</h3>
+            <p>Make your wedding day unforgettable with our expertly crafted menus and flawless presentation.</p>
+            <button>Learn More</button>
+        </div>
+    </div>
+
+    <!-- Service Item -->
+    <div class="catering-card">
+        <img src="images/corporate-catering.jpeg" alt="Corporate Catering">
+        <div class="card-content">
+            <h3>Corporate Catering</h3>
+            <p>Impress your clients and colleagues with professional catering for meetings, seminars, and office events.</p>
+            <button>Learn More</button>
+        </div>
+    </div>
+
+    <!-- Service Item -->
+    <div class="catering-card">
+        <img src="images/private-party.jpg" alt="Private Party Catering">
+        <div class="card-content">
+            <h3>Private Party Catering</h3>
+            <p>Host a spectacular party with a menu customized to your taste and style, perfect for any occasion.</p>
+            <button>Learn More</button>
+        </div>
+    </div>
+
+</div>
+
+    <!-- Contact Section -->
+<div class="contact-catering">
+    <h2>Let Us Cater Your Next Event!</h2>
+    <p>Contact us to create a customized catering experience that your guests will love.</p>
+    <a href="contact.html">
+        <button>Contact Us</button>
+    </a>
+</div>
+
+
+    <!-- Footer -->
+<footer class="site-footer">
+    <p>© 2024 Our Restaurant. All rights reserved.</p>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

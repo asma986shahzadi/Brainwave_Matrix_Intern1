@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef's special</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="margin: 0; font-family: 'Poppins', sans-serif;">
+
+    <header class="main-header">
+        <div class="logo">
+          <img src="logo.png" alt="Restaurant Logo">
+        </div>
+      
+        <nav>
+          <ul class="nav-links">
+            <li><a href="home.html" class="nav-item">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="nav-item">Services</a>
+              <ul class="dropdown-menu">
+                <li><a href="our_menu.html">Menu</a></li>
+                <li><a href="event_hosting.html">Event Hosting</a></li>
+                <li><a href="catering_service.html">Catering Services</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html" class="nav-item">About</a></li>
+            <li><a href="blog.html" class="nav-item">Blog</a></li>
+            <li><a href="contact.html" class="nav-item">Contact</a></li>
+          </ul>
+        </nav>
+      
+        <div class="search-box">
+            <form action="searchbutton.php" method="GET" id="searchForm">
+                <input type="text" name="query" id="searchInput" placeholder="Search..." required>
+                <button type="submit" class="search-btn">Search</button>
+            </form>
+        </div>
+        
+        <!-- Results will be displayed here -->
+        <div id="searchResults"></div>  
+          </div>
+          
+      </header>
+
+
+    <!-- Hero Section -->
+    <div style="
+        height: 60vh; 
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/signature-dishes/chef-background.jpg') no-repeat center center / cover; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        text-align: center; 
+        color: white;">
+        <h1 style="font-size: 4rem; text-shadow: 3px 3px 10px rgba(0,0,0,0.7);">Chef's special</h1>
+    </div>
+
+    <!-- Menu Section -->
+<div class="menu-section">
+    <h2 class="menu-title">Explore Our Dishes</h2>
+    <div class="menu-items">
+
+        <!-- Food Item 1 -->
+        <div class="food-item">
+            <img src="images/signature-dishes/Chapli_Kabab.jpg" alt="Dish 1" class="food-image">
+            <div class="food-details">
+                <h3>Chapli Kabab</h3>
+                <p>$12.99</p>
+                <button class="order-btn" onclick="alert('Order placed for Chapli Kabab!')">Order Now</button>
+            </div>
+        </div>
+
+        <!-- Food Item 2 -->
+        <div class="food-item">
+            <img src="images/signature-dishes/dal-chawal.jpg" alt="Dish 2" class="food-image">
+            <div class="food-details">
+                <h3>Dal Chawal</h3>
+                <p>$9.99</p>
+                <button class="order-btn" onclick="alert('Order placed for Dal Chawal!')">Order Now</button>
+            </div>
+        </div>
+
+        <!-- Food Item 3 -->
+        <div class="food-item">
+            <img src="images/signature-dishes/falooda.jpg" alt="Dish 3" class="food-image">
+            <div class="food-details">
+                <h3>Falooda</h3>
+                <p>$10</p>
+                <button class="order-btn" onclick="alert('Order placed for Falooda!')">Order Now</button>
+            </div>
+        </div>
+
+        <!-- Food Item 4 -->
+        <div class="food-item">
+            <img src="images/signature-dishes/Kabuli-Pulao.jpg" alt="Dish 4" class="food-image">
+            <div class="food-details">
+                <h3>Kabuli Pulao</h3>
+                <p>$15</p>
+                <button class="order-btn" onclick="alert('Order placed for Kabuli Pulao!')">Order Now</button>
+            </div>
+        </div>
+
+        <!-- Food Item 5 -->
+        <div class="food-item">
+            <img src="images/signature-dishes/kheer.jpg" alt="Dish 5" class="food-image">
+            <div class="food-details">
+                <h3>Kheer</h3>
+                <p>$9.5</p>
+                <button class="order-btn" onclick="alert('Order placed for Kheer!')">Order Now</button>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+    <!-- Footer Section -->
+<footer class="footer-section">
+    <p>© 2024 Our Restaurant. All rights reserved.</p>
+</footer>
+
+
+</body>
+</html>

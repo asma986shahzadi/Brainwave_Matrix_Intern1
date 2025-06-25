@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Show More Button */
+.menu-button {
+    display: inline-block;
+    padding: 14px 30px;
+    background-color: #e67e22; /* Vibrant orange */
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.menu-button:hover {
+    background-color: #cf6412; /* Darker orange on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .menu-button {
+        font-size: 1rem;
+        padding: 12px 24px;
+        width: 80%;
+        text-align: center;
+    }
+}
+
+    </style>
+    
+</head>
+<body style="margin: 0; font-family: 'Poppins', sans-serif;">
+
+    <header class="main-header">
+        <div class="logo">
+          <img src="logo.png" alt="Restaurant Logo">
+        </div>
+      
+        <nav>
+          <ul class="nav-links">
+            <li><a href="home.html" class="nav-item">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="nav-item">Services</a>
+              <ul class="dropdown-menu">
+                <li><a href="our_menu.html">Menu</a></li>
+                <li><a href="event_hosting.html">Event Hosting</a></li>
+                <li><a href="catering_service.html">Catering Services</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html" class="nav-item">About</a></li>
+            <li><a href="blog.html" class="nav-item">Blog</a></li>
+            <li><a href="contact.html" class="nav-item">Contact</a></li>
+          </ul>
+        </nav>
+      
+        <div class="search-box">
+            <form action="searchbutton.php" method="GET" id="searchForm">
+                <input type="text" name="query" id="searchInput" placeholder="Search..." required>
+                <button type="submit" class="search-btn">Search</button>
+            </form>
+        </div>
+        
+        <!-- Results will be displayed here -->
+        <div id="searchResults"></div>  
+          </div>
+          
+      </header>
+      
+    <!-- Hero Section -->
+    <div id="hero" style="height: 100vh; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/resturant.jpeg') no-repeat center center / cover; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; padding: 20px;">
+    <!-- Welcome Text -->
+    <h1 id="heroTitle" style="font-size: 4rem; margin: 0; text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7); font-weight: 700; line-height: 1.2; opacity: 0; transform: translateY(-20px); transition: opacity 1s ease, transform 1s ease;">
+        Experience Exquisite Dining
+    </h1>
+    <!-- Subheading -->
+    <p id="heroSubtitle" style="font-size: 1.5rem; margin-top: 15px; max-width: 600px; line-height: 1.8; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); opacity: 0; transform: translateY(-20px); transition: opacity 1s ease 0.3s, transform 1s ease 0.3s;">
+        Enjoy fine dining with an exceptional menu, stunning ambiance, and remarkable service.
+    </p>
+    <!-- Call-to-Action Button -->
+    <a href="book-table.html" style="text-decoration: none;">
+        <button id="bookTableBtn" style="padding: 15px 30px; margin-top: 25px; background-color: #ff5733; border: none; color: white; font-size: 1.2rem; font-weight: bold; border-radius: 30px; cursor: pointer; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;">
+            Book a Table
+        </button>
+    </a>
+    </div>
+    <script>
+    //  JavaScript for Hover Effect & Text Transition 
+    
+    // Button hover effect
+    const btn = document.getElementById('bookTableBtn');
+    btn.addEventListener('mouseover', () => {
+        btn.style.backgroundColor = '#e74c3c';
+        btn.style.transform = 'scale(1.05)';
+        btn.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.4)';
+    });
+    btn.addEventListener('mouseout', () => {
+        btn.style.backgroundColor = '#ff5733';
+        btn.style.transform = 'scale(1)';
+        btn.style.boxShadow = '0 6px 12px rgba(0, 0, 0, 0.3)';
+    });
+    // Text fade-in effect
+    window.addEventListener('load', () => {
+        const title = document.getElementById('heroTitle');
+        const subtitle = document.getElementById('heroSubtitle');
+        // Apply fade-in transition
+        title.style.opacity = '1';
+        title.style.transform = 'translateY(0)';  
+        subtitle.style.opacity = '1';
+        subtitle.style.transform = 'translateY(0)';
+    });
+    
+</script>
+
+    <!-- About Section -->
+    <div id="about" class="about-section">
+        <h2 class="about-heading">About Us</h2>
+        <p class="about-description">Discover our story and the ambiance that makes dining with us a delight.</p>
+        <div class="about-images">
+            <!-- Image 1 -->
+            <img src="images/interior.jpg" alt="Restaurant Interior" class="about-img">
+            <!-- Image 2 -->
+            <img src="images/dining.jpg" alt="Dining Area" class="about-img">
+        </div>
+    </div>
+    
+    <!-- menu section -->
+    <div id="menu" class="menu-section">
+        <h2 class="menu-heading">Our Menu</h2>
+        <p class="menu-description">Explore our delicious offerings.</p>
+        <div id="menu-items" class="menu-items">
+            <!-- Menu Item 1 -->
+            <div class="menu-item">
+                <img src="images/food1.jpeg" alt="Dish 1" class="menu-img">
+                <h3 class="menu-title">Applebee's</h3>
+                <p class="menu-price">$10</p>
+            </div>
+            <!-- Menu Item 2 -->
+            <div class="menu-item">
+                <img src="images/food2.jpeg" alt="Dish 2" class="menu-img">
+                <h3 class="menu-title">Pancakes</h3>
+                <p class="menu-price">$12</p>
+            </div>
+            <!-- Menu Item 3 -->
+            <div class="menu-item">
+                <img src="images/main-course/grill-chicken.jpg" alt="Dish 3" class="menu-img">
+                <h3 class="menu-title">Grilled Steak </h3>
+                <p class="menu-price">$20</p>
+            </div>
+        </div>
+        <a href="our_menu.html" class="menu-button">Show More</a>
+
+    </div>
+    
+    
+    
+ <!-- Contact Form Section -->
+<div class="contact-form-container">
+    <h2 class="contact-title">Get in Touch</h2>
+    <p class="contact-subtitle">We'd love to hear from you!</p>
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name" class="contact-input" required />
+        <input type="email" placeholder="Your Email" class="contact-input" required />
+        <textarea placeholder="Your Message" class="contact-textarea" required></textarea>
+        <button type="submit" class="contact-btn">Send Message</button>
+    </form>
+</div>
+
+
+    <!-- Google Map Section -->
+<div class="google-map-container">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094235!2d144.95373531531593!3d-37.8172099797516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5772cb623b15b0!2sRestaurant!5e0!3m2!1sen!2sus!4v1638969980000!5m2!1sen!2sus"
+        width="100%" height="430" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+</div>
+
+    <!-- Footer -->
+<footer class="custom-footer">
+    <!-- Decorative Bars -->
+    <div class="footer-top-bar"></div>
+    <div class="footer-bottom-bar"></div>
+
+    <!-- Follow Us Text -->
+    <p class="footer-title">Follow Us</p>
+
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+        <a href="https://www.facebook.com/groups/315248506037625/" title="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/colettebyxanders/?hl=en" title="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/the-garden-spice/?originalSubdomain=pk" title="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
+
+    <!-- Copyright -->
+    <p class="footer-copy">&copy; 2024 Our Restaurant. All Rights Reserved.</p>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+        Back to Top ↑
+    </button>
+</footer>
+    
+        <!-- Include Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

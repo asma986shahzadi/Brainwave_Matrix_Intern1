@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table</title>
+    <style>
+        /* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e3f0ff, #fafcfd);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container Styling */
+.booking-container {
+  background-color: #ffffffee;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  transition: transform 0.3s ease;
+}
+
+/* Title Styling */
+.booking-title {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+/* Label and Input Styling */
+label {
+  display: block;
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+}
+
+/* Button Styling */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #6cace4;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #559fd9;
+}
+
+/* Responsive Media Query */
+@media (max-width: 600px) {
+  .booking-container {
+    padding: 25px;
+    margin: 20px;
+  }
+
+  .booking-title {
+    font-size: 1.6rem;
+  }
+
+  label,
+  input,
+  select,
+  button {
+    font-size: 0.95rem;
+  }
+}
+
+    </style>
+</head>
+<body>
+
+  <div class="booking-container">
+    <h1 class="booking-title">Book a Table</h1>
+    <form action="booktable.php" method="POST">
+      <label for="name">Full Name:</label>
+      <input type="text" name="fullname" id="name" placeholder="Enter your name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+      <label for="date">Date:</label>
+      <input type="date" name="date" id="date" required>
+
+      <label for="time">Time:</label>
+      <input type="time" name="time" id="time" required>
+
+      <label for="guests">Number of Guests:</label>
+      <select id="guests" name="guest" required>
+        <option value="">Select</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+      </select>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for your reservation!');
+        });
+
+        document.querySelector('button').addEventListener('mouseover', function() {
+            this.style.backgroundColor = '#357ab7';
+        });
+
+        document.querySelector('button').addEventListener('mouseout', function() {
+            this.style.backgroundColor = '#4a90e2';
+        });
+    </script>
+
+</body>
+</html>

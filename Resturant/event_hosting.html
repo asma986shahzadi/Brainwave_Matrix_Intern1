@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Hosting Services</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+          <img src="logo.png" alt="Restaurant Logo">
+        </div>
+      
+        <nav>
+          <ul class="nav-links">
+            <li><a href="home.html" class="nav-item">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="nav-item">Services</a>
+              <ul class="dropdown-menu">
+                <li><a href="our_menu.html">Menu</a></li>
+                <li><a href="event_hosting.html">Event Hosting</a></li>
+                <li><a href="catering_service.html">Catering Services</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html" class="nav-item">About</a></li>
+            <li><a href="blog.html" class="nav-item">Blog</a></li>
+            <li><a href="contact.html" class="nav-item">Contact</a></li>
+          </ul>
+        </nav>
+      
+        <div class="search-box">
+            <form action="searchbutton.php" method="GET" id="searchForm">
+                <input type="text" name="query" id="searchInput" placeholder="Search..." required>
+                <button type="submit" class="search-btn">Search</button>
+            </form>
+        </div>
+        
+        <!-- Results will be displayed here -->
+        <div id="searchResults"></div>  
+          </div>
+          
+      </header>
+
+   <!-- Hero Section -->
+<div class="hero-section">
+    <img src="images/corporate.jpg" alt="Event Background" class="hero-img">
+    <div class="hero-text">
+      <h1>Event Hosting Services</h1>
+    </div>
+  </div>
+  
+
+   <!-- Introduction Section -->
+<div class="intro-section">
+    <h2>Make Your Events Unforgettable</h2>
+    <p>
+        We specialize in curating memorable experiences for weddings, corporate gatherings, and birthday celebrations.
+        With a perfect blend of ambiance, gourmet cuisine, and personalized service, we turn your vision into a reality.
+    </p>
+</div>
+
+
+<!-- Services Section -->
+<div class="services-section">
+    
+    <!-- Service Item 1 -->
+    <div class="service-card">
+        <img src="images/wedding.jpg" alt="Wedding Event">
+        <div class="service-card-content">
+            <h3>Wedding Events</h3>
+            <p>Elegant venues, bespoke decor, and personalized attention to every detail ensure your big day is perfect.</p>
+            <button onclick="alert('Contact us for Wedding Event Hosting!')">Learn More</button>
+        </div>
+    </div>
+
+    <!-- Service Item 2 -->
+    <div class="service-card">
+        <img src="images/corporate.jpg" alt="Corporate Event">
+        <div class="service-card-content">
+            <h3>Corporate Events</h3>
+            <p>From meetings to gala dinners, we provide an elegant and professional environment to impress your guests.</p>
+            <button onclick="alert('Contact us for Corporate Event Hosting!')">Learn More</button>
+        </div>
+    </div>
+
+    <!-- Service Item 3 -->
+    <div class="service-card">
+        <img src="images/birthday.jpg" alt="Birthday Party">
+        <div class="service-card-content">
+            <h3>Birthday Parties</h3>
+            <p>Create magical birthday celebrations with vibrant themes, delicious menus, and fun-filled activities.</p>
+            <button onclick="alert('Contact us for Birthday Party Hosting!')">Learn More</button>
+        </div>
+    </div>
+
+</div>
+
+    <!-- Contact Section -->
+<div class="contact-section">
+    <h2>Book Your Event Today!</h2>
+    <p>Contact us to discuss your event requirements. Let us make your vision a reality.</p>
+    <a href="contact.html">
+        <button onclick="alert('Contact us at +123-456-7890!')">Contact Us</button>
+    </a>
+</div>
+
+    <!-- Footer Section -->
+<footer class="footer">
+    <p>© 2024 Our Restaurant. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
